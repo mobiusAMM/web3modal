@@ -24,10 +24,20 @@ import FrameLogo from "../logos/frame.svg";
 import BinanceChainWalletLogo from "../logos/binancechainwallet.svg";
 // @ts-ignore
 import WalletLinkLogo from "../logos/walletlink.svg";
+// @ts-ignore
+import LedgerLogo from "../logos/ledger_logo.png";
 
 import { IProviderInfo } from "../../helpers";
 
 export * from "../injected";
+
+export const LEDGER: IProviderInfo = {
+  id: "ledger",
+  name: "ledger",
+  logo: LedgerLogo,
+  type: "hardware",
+  check: "isLedger"
+};
 
 export const WALLETCONNECT: IProviderInfo = {
   id: "walletconnect",
